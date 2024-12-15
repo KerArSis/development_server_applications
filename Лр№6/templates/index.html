@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Logging Test</title>
+</head>
+<body>
+    <h1>Test Flask Logging</h1>
+    <button onclick="sendRequest('/log')">Test Logging</button>
+    <button onclick="sendRequest('/http-log')">Test HTTP Log</button>
+    <button onclick="sendRequest('/execution-time')">Test Execution Time</button>
+    <button onclick="sendRequest('/clear-logs')">Clear Logs</button>  <!-- Кнопка очистки логов -->
+    <div id="result" style="margin-top: 20px;"></div>
+    <div style="margin-top: 20px;">
+        <h2>Application Logs</h2>
+        <button onclick="loadLogs()">Load Logs</button>
+        <div id="logs" style="border: 1px solid #ccc; padding: 10px; margin-top: 10px; max-height: 300px; overflow-y: scroll;"></div>
+    </div>
+    
+
+    <script>
+        async function sendRequest(endpoint) {
+            try {
+                const response = await fetch(endpoint);
+                const data = await response.text();
+                document.getElementById('result').innerText = `Response: ${data}`;
+            } catch (error) {
+                document.getElementById('result').innerText = `Error: ${error.message}`;
+            }
+        }
+    </script>
+    <script>
+        async function loadLogs() {
+            try {
+                const response = await fetch('/logs');
+                const logs = await response.text();
+                document.getElementById('logs').innerHTML = logs;
+            } catch (error) {
+                document.getElementById('logs').innerText = `Error loading logs: ${error.message}`;
+            }
+        }
+    </script>
+    
+</body>
+</html>
