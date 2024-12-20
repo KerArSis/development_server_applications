@@ -1,0 +1,36 @@
+2024-12-20 09:04:52 [INFO]: Application has started.
+2024-12-20 09:04:52 [INFO]: Database initialized with tables.
+2024-12-20 09:04:52 [INFO]: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.17.0.2:5000
+2024-12-20 09:04:52 [INFO]: [33mPress CTRL+C to quit[0m
+2024-12-20 09:04:52 [INFO]:  * Restarting with stat
+2024-12-20 09:04:53 [INFO]: Application has started.
+2024-12-20 09:04:53 [INFO]: Database initialized with tables.
+2024-12-20 09:04:53 [WARNING]:  * Debugger is active!
+2024-12-20 09:04:53 [INFO]:  * Debugger PIN: 478-015-327
+2024-12-20 09:05:13 [INFO]: Accessed home page.
+2024-12-20 09:05:13 [INFO]: 172.17.0.1 - - [20/Dec/2024 09:05:13] "GET / HTTP/1.1" 200 -
+2024-12-20 09:05:13 [INFO]: Fetched 3 books from database.
+2024-12-20 09:05:13 [INFO]: 172.17.0.1 - - [20/Dec/2024 09:05:13] "GET /books HTTP/1.1" 200 -
+2024-12-20 09:05:17 [INFO]: Added new book: 'fa' by 'fa'.
+2024-12-20 09:05:17 [INFO]: 172.17.0.1 - - [20/Dec/2024 09:05:17] "[35m[1mPOST /books HTTP/1.1[0m" 201 -
+2024-12-20 09:05:17 [INFO]: Fetched 4 books from database.
+2024-12-20 09:05:17 [INFO]: 172.17.0.1 - - [20/Dec/2024 09:05:17] "GET /books HTTP/1.1" 200 -
+2024-12-20 09:05:38 [INFO]: Deleted book ID 7.
+2024-12-20 09:05:38 [INFO]: 172.17.0.1 - - [20/Dec/2024 09:05:38] "[35m[1mDELETE /books/7 HTTP/1.1[0m" 204 -
+2024-12-20 09:05:38 [INFO]: Fetched 3 books from database.
+2024-12-20 09:05:38 [INFO]: 172.17.0.1 - - [20/Dec/2024 09:05:38] "GET /books HTTP/1.1" 200 -
+2024-12-20 09:05:50 [INFO]: Added new book: '1' by '1'.
+2024-12-20 09:05:50 [INFO]: 172.17.0.1 - - [20/Dec/2024 09:05:50] "[35m[1mPOST /books HTTP/1.1[0m" 201 -
+2024-12-20 09:05:50 [INFO]: Fetched 4 books from database.
+2024-12-20 09:05:50 [INFO]: 172.17.0.1 - - [20/Dec/2024 09:05:50] "GET /books HTTP/1.1" 200 -
+2024-12-20 09:06:35 [INFO]: Added new book: '2' by '2'.
+2024-12-20 09:06:35 [INFO]: 172.17.0.1 - - [20/Dec/2024 09:06:35] "[35m[1mPOST /books HTTP/1.1[0m" 201 -
+2024-12-20 09:06:35 [INFO]: Fetched 5 books from database.
+2024-12-20 09:06:35 [INFO]: 172.17.0.1 - - [20/Dec/2024 09:06:35] "GET /books HTTP/1.1" 200 -
+2024-12-20 09:08:05 [INFO]: Added new book: '33' by '3'.
+2024-12-20 09:08:05 [INFO]: 172.17.0.1 - - [20/Dec/2024 09:08:05] "[35m[1mPOST /books HTTP/1.1[0m" 201 -
+2024-12-20 09:08:05 [INFO]: Fetched 6 books from database.
+2024-12-20 09:08:05 [INFO]: 172.17.0.1 - - [20/Dec/2024 09:08:05] "GET /books HTTP/1.1" 200 -
